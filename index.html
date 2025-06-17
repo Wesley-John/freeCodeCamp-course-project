@@ -17,108 +17,129 @@
     </head>
 
     <body>
-        <h1>Hello World</h1>
+        <header>
+            <h1>Hello World</h1>
 
-        <hr>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#html">Learning HTML</a>
-                </li>
-                <li> 
-                    <a href="#vacation">Planning a vacation</a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-
-        <section id="html">
-            <h2>I'm ready to learn HTML5</h2>
-            <p>This is my first webpage.</p>
-            <img src="images/html5.jpg" alt="HTML5 logo" title="Learning HTML5" width="300" height="200">
-            <figure>
-                <figcaption>An example of HTML5 code</figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-                </p>
-            </figure>
-
-            <h3>My Daily Schedule</h3>
-            <p>Let me tell you how:</p>
-            <ol>
-                <li>... I learn more about web dev.</li>
-                <li>... I practice coding every day.</li>
-                <li>... I build projects to apply my knowledge.</li>
-                <li>... I read documentation and tutorials.</li>
-                <li>... I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/" target="_blank">MDN</a></abbr></li>
-            </ol>
-        </section>
-
-        <hr>
-
-        <section id="vacation">
-            <h2>I Am Also Planning A Vacation</h2>
-            <p>I really <em>need</em> a getaway</p>
-            <p>I live in Japan so I want to vist Africa.</p>
-
-            <!--TODO: Add more places-->
-            <h3>Places I'd Like to Visit</h3>
-            <ul>
-                <li>
-                    <p>I've heard good things about Kenya.</p>
-                    <figure>
-                        <img src="images/Nairobi.jpg" alt="Nairobi City" title="Nairobi, Kenya" width="400" height="225" loading="lazy">
-                        <figcaption>Nairobi, Kenya</figcaption> 
-                    </figure>
-                    
-                </li>
-                <li>
-                    <p>I've heard good things about going here:</p>
-                    <address>
-
-                    </address>
-                    <figure>
-                        <img src="images/car.jpg" alt="Car in the savannah" title="Hakuna Matata" width="370" height="550" loading="lazy">
-                        <figcaption>Jeep In Savannah</figcaption>
-                    </figure>
-                    
-                </li>
-            </ul>
-            
-            
-            <h3>Places I'll Stay Away From</h3>
-            <dl>
-                <dt>South Africa</dt>
-                <dd>I've heard it's <strong>dangerous</strong>.</dd>
-
-                <dt>Somalia</dt>
-                <dd>I've heard it's also dangerous.</dd>
-
-                <dt>Sudan</dt>
-                <dd>I've heard it's also dangerous.</dd>
-
-                <dt>Libya</dt>
-                <dd>I've heard it's also dangerous.</dd>
-
-                <dt>
-                    <abbr title="Demoractic Republic of Congo">
-                        <a href="https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo" target="_blank">DRC</a>
-                    </abbr>
-                </dt>
-                <dd>I've heard it's also dangerous.</dd>
-            </dl>
-        </section>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learning HTML</a>
+                    </li>
+                    <li> 
+                        <a href="#vacation">Planning a vacation</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         
 
         <hr>
+        <main>
+            <article id="html">
+                <h2>I'm ready to learn HTML5</h2>
+                <p>This is my first webpage.</p>
+                <section>
+                    <h3>HTML5</h3>
+                    <img src="images/html5.jpg" alt="HTML5 logo" title="Learning HTML5" width="300" height="200">
+                    <figure>
+                        <figcaption>An example of HTML5 code</figcaption>
+                        <p>
+                            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                        </p>
+                    </figure>
+                </section>
+                <section>
+                    <h3>My Daily Schedule</h3>
+                    <p>Let me tell you how:</p>
+                    <ol>
+                        <li>... I learn more about web dev.</li>
+                        <li>... I practice coding every day.</li>
+                        <li>... I build projects to apply my knowledge.</li>
+                        <li>... I read documentation and tutorials.</li>
+                        <li>... I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/" target="_blank">MDN</a></abbr></li>
+                    </ol>
+                    <aside>
+                        <details>
+                            <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                            <p>I code for about <time datetime="PT4H"></time>4 hours per day. I start at <time datetime="08:00">8 am</time></p>
+                        </details>
+                    </aside>
+                </section>                
+            </article>
 
-        &lt;&lt;&lt; &copy; 2023 <a href="about.html">John Wesley</a> &gt;&gt;&gt;
+            <hr>
 
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
+            <article id="vacation">
+                <section>
+                    <h2>I Am Also Planning A Vacation</h2>
+                    <p>I really <em>need</em> a getaway</p>
+                    <p>I live in Japan so I want to vist Africa.</p>
+                </section>
+
+                <section>
+                    <!--TODO: Add more places-->
+                    <h3>Places I'd Like to Visit</h3>
+                    <ul>
+                        <li>
+                            <p>I've heard good things about Kenya.</p>
+                            <figure>
+                                <img src="images/Nairobi.jpg" alt="Nairobi City" title="Nairobi, Kenya" width="400" height="225" loading="lazy">
+                                <figcaption>Nairobi, Kenya</figcaption> 
+                            </figure>
+                            
+                        </li>
+                        <li>
+                            <p>I've heard good things about going here:</p>
+                            <address>
+
+                            </address>
+                            <figure>
+                                <img src="images/car.jpg" alt="Car in the savannah" title="Hakuna Matata" width="370" height="550" loading="lazy">
+                                <figcaption>Jeep In Savannah</figcaption>
+                            </figure>
+                            
+                        </li>
+                    </ul>
+                </section>                
+                
+                <section>
+                    <h3>Places I'll Stay Away From</h3>
+                    <dl>
+                        <dt>South Africa</dt>
+                        <dd>I've heard it's <strong>dangerous</strong>.</dd>
+
+                        <dt>Somalia</dt>
+                        <dd>I've heard it's also dangerous.</dd>
+
+                        <dt>Sudan</dt>
+                        <dd>I've heard it's also dangerous.</dd>
+
+                        <dt>Libya</dt>
+                        <dd>I've heard it's also dangerous.</dd>
+
+                        <dt>
+                            <abbr title="Demoractic Republic of Congo">
+                                <a href="https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo" target="_blank">DRC</a>
+                            </abbr>
+                        </dt>
+                        <dd>I've heard it's also dangerous.</dd>
+                    </dl>
+                </section>                
+            </article>
+        </main>      
+        
+        <hr>
+
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; 2023 <a href="about.html">John Wesley</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
+
+        
 
     </body>
 </html>
