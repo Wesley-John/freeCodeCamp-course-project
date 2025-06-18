@@ -66,30 +66,59 @@
                     </aside>
                     <br>
                     <table>
-                        <tr>
-                            <td>
-                                <time datetime="08:30">8:30 am</time>-<time datetime="09:30">9:30 am</time>
-                            </td>
-                            <td>Breakfast</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <time datetime="09:30">9:30 am</time>-<time datetime="11:30">11:30 am</time>
-                            </td>
-                            <td>Write code</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <time datetime="11:30">11:30 am</time>-<time datetime="12:30">12:30 pm</time>
-                            </td>
-                            <td>Lunch Break</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <time datetime="12:30">12:30 pm</time>-<time datetime="17:30">5:30 pm</time>
-                            </td>
-                            <td>Study my other courses</td>
-                        </tr>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2">Morning</th>
+                                <td>
+                                    <time datetime="08:30">8:30 am</time>-<time datetime="09:30">9:30 am</time>
+                                </td>
+                                <td>Breakfast</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <time datetime="09:30">9:30 am</time>-<time datetime="11:30">11:30 am</time>
+                                </td>
+                                <td>Write code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Midday</th>
+                                <td>
+                                    <time datetime="11:30">11:30 am</time>-<time datetime="12:30">12:30 pm</time>
+                                </td>
+                                <td>Lunch Break</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <time datetime="12:30">12:30 pm</time>-<time datetime="17:30">5:30 pm</time>
+                                </td>
+                                <td>Study my other courses</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All other times</td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And that's my normal weekday.</td>
+                            </tr>
+                        </tfoot>
+                        
+                        
                     </table>
                 </section>                
             </article>
